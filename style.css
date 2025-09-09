@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #0066cc;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+select, input, button {
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+button {
+  background: #009688;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00796b;
+}
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#output {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 2em;
+  z-index: 1000;
+}
+
+.pagination a {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background: #009688;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.pagination a:hover {
+  background: #00796b;
+}
+
