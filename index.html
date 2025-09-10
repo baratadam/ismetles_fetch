@@ -2,32 +2,25 @@
 <html lang="hu">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vicces viccek</title>
+    <title>Joke App</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Jokes</title>
   </head>
   <body>
-    <header>
-      <h1>API Adatlekérő</h1>
-      <nav>
-        <select id="queryType">
-          <option value="random">🎲 Véletlenszerű</option>
-          <option value="id">🔎 Lekérés ID alapján</option>
-          <option value="type">📂 Lekérés típus alapján</option>
-        </select>
-        <input type="text" id="inputValue" placeholder="Pl. 5 vagy 'fire'" />
-        <button id="button">Lekérés</button>
-        <div class="pagination">
-          <a href="#" class="prev">« Previous</a>
-          <a href="#" class="next">Next &raquo;</a>
-        </div>
-      </nav>
-    </header>
+    <h1>Vicc App</h1>
 
-    <main>
-      <section id="output"></section>
-    </main>
+    <nav>
+      <button class="nav-btn active" data-mode="random">🎲 Random</button>
+      <button class="nav-btn" data-mode="id">#️⃣ ID</button>
+      <button class="nav-btn" data-mode="type">🗂️ Típus</button>
+    </nav>
 
-    <script src="script.js"></script>
+    <div id="extra-inputs"></div>
+
+    <button id="getJoke">Új vicc</button>
+
+    <div id="jokeDisplay"></div>
+
+    <script src="app.js"></script>
   </body>
 </html>
