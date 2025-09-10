@@ -3,7 +3,6 @@ const queryType = document.getElementById('queryType');
 const inputValue = document.getElementById('inputValue');
 const output = document.getElementById('output');
 
-// IDE ÍRD AZ API ALAP URL-T
 const API_BASE = 'https://official-joke-api.appspot.com/jokes';
 
 button.addEventListener('click', () => {

@@ -5,7 +5,6 @@ const jokeDisplay = document.getElementById("jokeDisplay");
 
 let currentMode = "random";
 
-// 🔹 Navigáció kattintás
 navButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     navButtons.forEach((b) => b.classList.remove("active"));
@@ -29,7 +28,6 @@ navButtons.forEach((btn) => {
   });
 });
 
-// 🔹 Vicc lekérés
 getJokeBtn.addEventListener("click", async () => {
   let url = "";
   if (currentMode === "random") {
